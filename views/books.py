@@ -5,7 +5,7 @@ from setup_db import db
 
 book_ns = Namespace('books')
 
-book_ns.route("")
+@book_ns.route("")
 class BooksVieq(Resource):
     def get(self):
         books = Book.query.all()
