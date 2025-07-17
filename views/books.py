@@ -6,7 +6,7 @@ from setup_db import db
 book_ns = Namespace('books')
 
 @book_ns.route("")
-class BooksVieq(Resource):
+class BooksView(Resource):
     def get(self):
         books = Book.query.all()
         res = []
